@@ -11,7 +11,7 @@ def lowest_rating
 end
 
 def least_popular_show
-  show.minimum(:number_of_stars)
+  Show.minimum(:number_of_stars)
 end
 
 def ratings_sum
