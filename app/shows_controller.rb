@@ -14,7 +14,7 @@ def least_popular_show
 end
 
 def ratings_sum
-  <Show>.sum(:number_of_stars)
+  Show.sum(:number_of_stars)
 end
 
 def popular_shows
