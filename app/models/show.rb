@@ -11,19 +11,19 @@ class Show < ActiveRecord::Base
     Show.minimum(:rating)
   end
 
-  def least_popular_show
+  def self.least_popular_show
     Show.minimum(:rating)
   end
 
-  def ratings_sum
+  def self.ratings_sum
     Show.sum(:number_of_stars)
   end
 
-  def popular_shows
+  def self.popular_shows
     Show.where("number_of_stars > ?", 5)
   end
 
-  def shows_by_alphabetical_order
+  def self.shows_by_alphabetical_order
     Show.order(:name)
   end
 end
