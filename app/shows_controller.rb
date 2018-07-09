@@ -1,5 +1,5 @@
 def highest_rating
-  Show.where("number_of_stars > ?", 10)
+  Show.maximum("number_of_stars")
 end
 
 def most_popular_show
