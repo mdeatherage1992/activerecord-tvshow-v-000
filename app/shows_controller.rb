@@ -7,6 +7,7 @@ def most_popular_show
 end
 
 def lowest_rating
+  Show.minimum(:number_of_stars)
 end
 
 def least_popular_show
