@@ -3,6 +3,7 @@ def highest_rating
 end
 
 def most_popular_show
+  Show.where("number_of_stars > ?", 10)
 end
 
 def lowest_rating
