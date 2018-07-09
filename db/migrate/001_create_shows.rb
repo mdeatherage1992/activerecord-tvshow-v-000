@@ -1,0 +1,1 @@
+class CreatShows < ActiveRecord::Migration
